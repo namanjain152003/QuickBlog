@@ -100,6 +100,16 @@ const AddBlog = () => {
   <p className='mt-4'>Sub title</p>
    <input type="text" placeholder='Type here' required className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' onChange={e=> setSubTitle(e.target.value)} value={SubTitle} />
 
+  <p className='mt-4'>Author Name</p>
+<input 
+  type="text" 
+  placeholder='Type author name' 
+  required 
+  className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' 
+  onChange={e => setAuthor(e.target.value)} 
+  value={author} 
+/>
+
    <p className='mt-4'>blog Description</p>
    <div className='max-w-lg h-74 pb-16 sm:pb-10 pt-2 relative'>
     <div ref={editorRef}></div>
