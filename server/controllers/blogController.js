@@ -5,12 +5,12 @@ import Comment from '../models/Comment.js';
 import main from '../configs/gemini.js';
 export const addBlog= async(req, res)=>{
     try{
-        const {title, subTitle, description, category, isPublished} = JSON.parse(req.body.blog);
+        const {title, subTitle, description, category, isPublished, author} = JSON.parse(req.body.blog);
    const imageFile =req.file;
 
 
    // check if all the fields are present
-   if(!title || !description || !category || !imageFile){
+   if(!title || !description || !category || !imageFile || !author){
     return res.json({success:false, message: "Missing required fields"})
    }
  const fileBuffer=fs.readFileSync(imageFile.path)
@@ -34,7 +34,7 @@ export const addBlog= async(req, res)=>{
  })
  const  image = optimizedImageUrl;
 
- await Blog.create({title, subTitle, description, category, image, isPublished})
+ await Blog.create({title, subTitle, description, category, image, isPublished,author})
  res.json({success:true, message:"blog added successfully"})
 
     } catch(error){

@@ -21,6 +21,7 @@ const AddBlog = () => {
   const [SubTitle, setSubTitle] =useState('');
   const [category, setCategory] =useState('Startup');
   const [isPublished, setIsPublished] =useState(false);
+   const [author, setAuthor] = useState('');
 
 
   const generateContent =async ()=> {
@@ -51,7 +52,8 @@ const AddBlog = () => {
     const blog ={
       title , SubTitle , 
       description : quillRef.current.root.innerHTML,
-      category, isPublished
+      category, isPublished,
+      author
     }
     const formData = new FormData();
     formData.append('blog',JSON.stringify(blog) )
