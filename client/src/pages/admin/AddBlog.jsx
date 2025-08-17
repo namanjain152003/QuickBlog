@@ -65,8 +65,11 @@ const AddBlog = () => {
       toast.success(data.message);
       setImage(false)
       setTitle('')
+      setSubTitle('');
+       setAuthor('');
       quillRef.current.root.innerHTML= ''
       setCategory('Startup')
+      setIsPublished(false);
     }
     else{
       toast.error(data.message)
