@@ -2,6 +2,8 @@
 
 QuickBlog is an AI-powered blogging platform that allows users to generate and manage blog content effortlessly. It is designed to provide a seamless content creation experience.
 
+LIVE LINK : [https://quick-blog-beryl-six.vercel.app/](https://quick-blog-beryl-six.vercel.app/)
+
 ## Features
 * AI-powered blog generation
 * User authentication and management
