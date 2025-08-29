@@ -4,7 +4,9 @@ QuickBlog is an AI-powered blogging platform that allows users to generate and m
 
 LIVE LINK : [https://quick-blog-beryl-six.vercel.app/](https://quick-blog-beryl-six.vercel.app/)
 
-## Features
+---
+
+## ✨ Features
 * AI-powered blog generation
 * User authentication and management
 * Create, edit, and delete blog posts
@@ -13,14 +15,18 @@ LIVE LINK : [https://quick-blog-beryl-six.vercel.app/](https://quick-blog-beryl-
 * Backend built with Node.js and Express
 * Data stored in MongoDB
 
-## Technologies Used
+---
+
+## 🛠 Technologies Used
 * Frontend: React.js (in client folder)
 * Backend: Node.js, Express.js (in server folder)
 * Database: MongoDB
 * Media Optimization: ImageKit
 * AI Integration: Gemini API
 
-# Installation
+---
+
+# ⚙️ Setup & Installation 
 1. Clone the repository:
 ```bash
 git clone https://github.com/namanjain152003/QuickBlog
