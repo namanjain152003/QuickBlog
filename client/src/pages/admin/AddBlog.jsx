@@ -21,7 +21,11 @@ const AddBlog = () => {
   const [SubTitle, setSubTitle] =useState('');
   const [category, setCategory] =useState('Startup');
   const [isPublished, setIsPublished] =useState(false);
+
    const [author, setAuthor] = useState('');
+
+  
+
 
 
   const generateContent =async ()=> {
@@ -53,6 +57,7 @@ const AddBlog = () => {
       title , SubTitle , 
       description : quillRef.current.root.innerHTML,
       category, isPublished,
+
       author
     }
     const formData = new FormData();
@@ -65,7 +70,9 @@ const AddBlog = () => {
       toast.success(data.message);
       setImage(false)
       setTitle('')
+
       setSubTitle('');
+
        setAuthor('');
       quillRef.current.root.innerHTML= ''
       setCategory('Startup')
@@ -103,7 +110,9 @@ const AddBlog = () => {
   <p className='mt-4'>Sub title</p>
    <input type="text" placeholder='Type here' required className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' onChange={e=> setSubTitle(e.target.value)} value={SubTitle} />
 
+
   <p className='mt-4'>Author Name</p>
+
 <input 
   type="text" 
   placeholder='Type author name' 
